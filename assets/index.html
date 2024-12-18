@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRAWITTECHAKAM</title>
+    <link rel="icon" type="image/x-icon" href="../assets/images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.6.0/remixicon.css">
+    <link rel="stylesheet" href="..//assets/css/swap.css/">
+    <link rel="stylesheet" href="..//assets/css/boostrap.min.css">
+    <link rel="stylesheet" href="..//assets/css/magnific-popup.min.css">
+    <link rel="stylesheet" href="..//assets/css/slick.css">
+    <link rel="stylesheet" href="..//assets/css/style.css">
+    <link rel="stylesheet" href="..//assets/css/media_query.css">
+</head>
+
+<body>
+    <!-- ====================================== Preloader ===================================== -->
+    <div class="wrapper">
+        <div id="loader-wrapper">
+            <div id="loader">
+                <svg viewBox="0 0 1320 300">
+                    <text x="50%" y="50%" dy=".35em" text-anchor="middle">PRAWITTECHAKAM </text>
+                </svg>
+            </div>
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+        </div>
+    </div>
+    <!-- ====================================== Preloader End ===================================== -->
+    <!-- ====================================== Background Animation ===================================== -->
+    <canvas id="test"></canvas>
+    <!-- ====================================== Background Animation End ===================================== -->
+    <!-- ====================================== Cursor ===================================== -->
+    <div class="cursor"></div>
+    <!-- ====================================== Cursor End ===================================== -->
+    <!-- ====================================== Dark Light Mode ===================================== -->
+    <div class="dark_toggle">
+        <div class="ul-header">
+            <a class="mode" onclick="myFunction()" title="Toggle Mode">
+                <div class="icon-container">
+                    <i id="sunIcon" class="fa-solid fa-sun fa-spin icon"></i>
+                    <i id="moonIcon" class="fa-solid fa-moon icon hidden"></i>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- ====================================== Dark Light Mode End===================================== -->
+    <header>
+        <!-- ====================================== Fix Icon Menu ===================================== -->
+        <div class="sidebar close">
+            <ul class="nav-links icetab-container" id="icetab-container">
+                <li class="icetab current-tab">
+                    <a class="nav_menu_icon_line" href="javascript:void(0)">
+                        <img class="nav_menu_icon" src="../assets/images/home_icon.svg" alt="home_icon">
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li class=""><a class="link_name" href="javascript:void(0)">Home</a></li>
+                    </ul>
+                </li>
+                <li class="icetab menu-btn">
+                    <a class="nav_menu_icon_line" href="javascript:void(0)">
+                        <img class="nav_menu_icon" src="../assets/images/about_icon.svg" alt="about_icon">
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a class="link_name" href="javascript:void(0)">About Me</a></li>
+                    </ul>
+                </li>
+                <li class="icetab">
+                    <a class="nav_menu_icon_line" href="javascript:void(0)">
+                        <img class="nav_menu_icon" src="../assets/images/resume_icon.svg" alt="resume_icon">
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a class="link_name" href="javascript:void(0)">Resume</a></li>
+                    </ul>
+                </li>
+                <li class="icetab">
+                    <a class="nav_menu_icon_line" href="javascript:void(0)">
+                        <img class="nav_menu_icon" src="../assets/images/skills_icon.svg" alt="skills_icon">
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="javascript:void(0)">Skills</a></li>
+                    </ul>
+                </li>
+                <li class="icetab">
+                    <a class="nav_menu_icon_line" href="javascript:void(0)">
+                        <img class="nav_menu_icon" src="../assets/images/portfolio_icon.svg" alt="portfolio_icon">
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="javascript:void(0)">Portfolio</a></li>
+                    </ul>
+                </li>
+                <li class="icetab">
+                    <a class="javascript:void(0)" href="javascript:void(0)">
+                        <img class="nav_menu_icon" src="../assets/images/contact_icon.svg" alt="contact_icon">
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="javascript:void(0)">Contact</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- ====================================== Fix Icon Menu End ===================================== -->
+        <!-- ======================================= Side Menu ================================== -->
+        <div class="toggle" onclick="openNav()">
+            <img class="line-menu" src="../assets/images/line-menu.png" alt="line-menu">
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <div class="closebtn" onclick="closeNav()">&times;</div>
+            <img class="logo" src="../assets/images/logo.png" alt="logo">
+            <ul class="sidescreen_sub icetab-container" id="icetab-container2">
+                <li class="icetab current-tab" onclick="openNav()">
+                    <a class="icons2" href="javascript:void(0)">
+                        <img class="nav_menu_icon sidenav_img" src="../assets/images/home_icon.svg" alt="home_icon">Home
+                    </a>
+                </li>
+                <li class="icetab" onclick="openNav()">
+                    <a class="icons2" href="javascript:void(0)">
+                        <img class="nav_menu_icon sidenav_img" src="../assets/images/about_icon.svg"
+                            alt="about_icon">About Me
+                    </a>
+                </li>
+                <li class="icetab" onclick="openNav()">
+                    <a class="icons2" href="javascript:void(0)">
+                        <img class="nav_menu_icon sidenav_img" src="../assets/images/resume_icon.svg"
+                            alt="resume_icon">Resume
+                    </a>
+                </li>
+                <li class="icetab" onclick="openNav()">
+                    <a class="icons2" href="javascript:void(0)">
+                        <img class="nav_menu_icon sidenav_img" src="../assets/images/skills_icon.svg"
+                            alt="skills_icon">Skills
+                    </a>
+                </li>
+                <li class="icetab" onclick="openNav()">
+                    <a class="icons2" href="javascript:void(0)">
+                        <img class="nav_menu_icon sidenav_img" src="../assets/images/portfolio_icon.svg"
+                            alt="portfolio_icon">Portfolio
+                    </a>
+                </li>
+                <li class="icetab" onclick="openNav()">
+                    <a class="icons2" href="javascript:void(0)">
+                        <img class="nav_menu_icon sidenav_img" src="../assets/images/contact_icon.svg"
+                            alt="contact_icon">Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- ======================================= Side Menu End ================================== -->
+    </header>
+    <div class="all_page" id="page">
+        <section class="card_section" id="card_main">
+            <div class="olivia_bio" id="oliva_details">
+                <div class="imgBox">
+                    <img class="olivia-img" src="../assets/images/olivia-img.jpg" alt="olivia-img">
+                </div>
+                <div class="bio_contain">
+                    <h1 class="olivia_moswa">Prawit techakam</h1>
+                    <h2 class="designer font_w_font_s1 overflow-hidden"></h2>
+                    <button class="download_cv hire_me font_w_font_s">
+                        <i class="ri-at-line"></i> Hire Me
+                    </button>
+                </div>
+            </div>
+            <div class="right_card_main icetab-content" id="icetab-content">
+                <!-- ======================================= Home Section ================================== -->
+                <section class="oliva-intro tabcontent tab-active" id="home">
+                    <div class="intro_main">
+                        <h2 class="intro font_w_font_s fade_up">intro</h2>
+                    </div>
+                    <h2 class="moswa font_w_font_s fade_up">สวัสดีครับผม ประวิทย์ เตชะคำ,ชื่อเล่น บอสครับ</h2>
+                    <h3 class="passionate font_w_font_s1 fade_up">ผมเป็นบัณฑิตใหม่ไฟแรงทะลุหลอดที่กำลังหางาน
+                        ผมถนัดด้าน การออกแบบกราฟิก, โมชั่นกราฟิก, โปรแกรมตัดต่อวิดีโอ ครับผม
+                    </h3>
+                    <div class="button_circle_group">
+                        <div>
+                            <button class="download_cv font_w_font_s"
+                                onClick="window.open('../assets/pdf/Prawittechakam_resume.pdf');">
+                                <i class="ri-download-cloud-2-line"></i>Download Resume
+                            </button>
+                        </div>
+                        <div class="circular_text_main ">
+                            <a href="javascript:void(0)" class="down_arrow_main position-relative">
+                                <img class="circular_text" src="../assets/images/circular_text.png" alt="circular_text">
+                                <img class="down_arrow" src="../assets/images/down_arrow.svg" alt="down_arrow">
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <!-- ======================================= About Section ================================== -->
+                <section class="oliva-intro tabcontent" id="about">
+                    <div class="intro_main">
+                        <h2 class="intro font_w_font_s fade_up">about me</h2>
+                    </div>
+                    <h3 class="passionate font_w_font_s1 fade_up">จบจากคณะเทคโนโลยีสื่อสารมวลชน 
+                        สาขาเทคโนโลยีมัลติมิเดียมหาวิทยาลัยเทคโนโลยีราชมงคลธัญบุรี ผมชื่นชอบในสายงานโปรดักชั่น ทั้งเบื้องหน้าและเบื้องหลัง 
+                        ถนัดการทำโมชั่นกราฟิกตัดต่อวีดีโอครับมีความคิดสร้างสรรค์และมีความรับผิดชอบผมพร้อมที่จะพัฒนาตัวเองเรียนรู้สิ่งใหม่ๆเพื่อเพิ่มศักยภาพให้กับตัวผมเองและองค์กร
+                    </h3>
+                    <h2 class="intro font_w_font_s fade_up">Info</h2>
+
+                    <h3 class="passionate font_w_font_s1 fade_up">Birthday : สิงหาคม 20, 2002 </h3>
+                    <h3 class="passionate font_w_font_s1 fade_up">Phone : +66 98-458-7274 </h3>
+                    <h3 class="passionate font_w_font_s1 fade_up">Email : Prawittechakam@gmail.com </h3>
+                </section>
+                <!-- ======================================= Resume Section ================================== -->
+                <section class="oliva-intro tabcontent" id="resume">
+                    <div class="intro_main">
+                        <h2 class="intro font_w_font_s fade_up">Resume</h2>
+                    </div>
+                    <h2 class="moswa font_w_font_s fade_up">ประวัติการศึกษา</h2>
+                    <h3 class="passionate font_w_font_s1 fade_up">
+                    </h3>
+                    <div class="education position-relative education_space">
+                        <div class="side_circle_ring fade_up">
+                            <div class="small_yellow_border">
+                                <div class="small_yellow_circle"></div>
+                            </div>
+                        </div>
+                        <div class="small_yellow_border_main fade_up">
+                            <h3 class="bachelor font_w_font_s1">เทคโนโลยีบัณฑิต เทคโนโลยีมัลติมีเดีย</h3>
+                            <h4 class="university font_w_font_s1">มหาวิทยาลัยเทคโนโลยีราชมงคลธัญบุรี / 2565 - 2567 
+                            </h4>
+                            <h5 class="cursus font_w_font_s1">ทักษะที่ได้จากเทคโนโลยีมัลติมีเดีย เช่น การออกแบบกราฟิก การสร้างภาพเคลื่อนไหว
+                                การตัดต่อวิดีโอและการพัฒนาเว็บไซต์ เพื่อสร้างผลงานหรือระบบที่สื่อสารอย่างมีประสิทธิภาพ
+                            </h5>
+                            <h3 class="bachelor font_w_font_s1">GPA 3.57 เกียรตินิยมอันดับ 1
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="education position-relative education_space">
+                        <div class="side_circle_ring fade_up">
+                            <div class="small_yellow_border">
+                                <div class="small_yellow_circle"></div>
+                            </div>
+                        </div>
+                        <div class="small_yellow_border_main fade_up">
+                            <h3 class="bachelor font_w_font_s1">ประกาศนียบัตรวิชาชีพชั้นสูง เทคโนโลยีธุรกิจดิจิทัล</h3>
+                            <h4 class="university font_w_font_s1">วิทยาลัยเทคโนโลยีสหะพาณิชย์บริหารธุรกิจ / 2564 - 2565</h4>
+                            <h5 class="cursus font_w_font_s1">เป็นสาขาวิชาที่ความรู้ทางด้านเทคโนโลยีเข้ากับหลักการทางธุรกิจ เพื่อพัฒนาและบริหารจัดการธุรกิจในยุคดิจิทัล.
+                                ครอบคลุมทั้งทฤษฎีและปฏิบัติ โดยเน้นการพัฒนาทักษะที่จำเป็นต่อการทำงานธุรกิจ เช่น SEO, SEM, Social Media Marketing, Content Marketing, และ Email Marketing ครับ
+                            <h3 class="bachelor font_w_font_s1">GPA 3.63 
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="education position-relative">
+                        <div class="side_circle_ring fade_up">
+                            <div class="small_yellow_border">
+                                <div class="small_yellow_circle"></div>
+                            </div>
+                        </div>
+                        <div class="small_yellow_border_main fade_up">
+                            <h3 class="bachelor font_w_font_s1">ประกาศนียบัตรวิชาชีพ คอมพิวเตอร์ธุรกิจ</h3>
+                            <h4 class="university font_w_font_s1">วิทยาลัยเทคโนโลยีสหะพาณิชย์บริหารธุรกิจ / 2560 - 2562</h4>
+                            <h5 class="cursus font_w_font_s1">ทักษะความรู้ด้าน เทคโนโลยีสารสนเทศ (IT) และ การบริหารธุรกิจ 
+                                เพื่อพัฒนาทักษะการใช้คอมพิวเตอร์และเทคโนโลยีสำหรับจัดการและแก้ปัญหาทางธุรกิจ
+                            </h5>
+                            <h3 class="bachelor font_w_font_s1">GPA 3.35
+                            </h3>
+                        </div>
+                    </div>
+                    <h2 class="moswa experience_main_text font_w_font_s fade_up">ประสบการณ์ทํางาน</h2>
+                    <h3 class="passionate font_w_font_s1 fade_up">
+                    </h3>
+                    <div class="education position-relative education_space">
+                        <div class="side_circle_ring fade_up">
+                            <div class="small_yellow_border">
+                                <div class="small_yellow_circle"></div>
+                            </div>
+                        </div>
+                        <div class="small_yellow_border_main fade_up">
+                            <div class="envato_group_main">
+                                <div>
+                                    <h3 class="bachelor font_w_font_s1">Motion graphic & Camera man & Editor</h3>
+                                    <h4 class="company font_w_font_s1">Ramuttchanel / เม.ย. 2567 - พ.ย. 2567</h4>
+                                </div>
+                                
+                            </div>
+                            <h5 class="cursus font_w_font_s1">สร้างสรรค์ โมชั่นกราฟิกทั้งรายการ เช่น ข้อความเน้นคำพูด lower third เอฟเฟคขยี้มุขTransition ตารางทัวร์นาเมนต์ สำหรับรายการ 12 kingdoms
+                                ตากล้อง ทำตามแผนโดยจะเป็นตากล้องควบคุมให้อยู่ในระยะที่กำหนดจัดวาง  ควบคุม Composition, Framing, และ Focus ให้ได้ภาพที่สวยงาม
+                                ตัดต่อวีดีโอ รายการ 12 kingdom Ep 13 - Ep 23
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="education position-relative education_space">
+                        <div class="side_circle_ring fade_up">
+                            <div class="small_yellow_border">
+                                <div class="small_yellow_circle"></div>
+                            </div>
+                        </div>
+                        <div class="small_yellow_border_main fade_up">
+                            <div class="envato_group_main">
+                                <div>
+                                    <h3 class="bachelor font_w_font_s1">Motion graphic</h3>
+                                    <h4 class="company font_w_font_s1">Bunjong production  / ตุ.ค. 2565 - เม.ย. 2567</h4>
+                                </div>
+                                
+                            </div>
+                            <h5 class="cursus font_w_font_s1">โมชั่นกราฟิกโลโก้รายการ lower third เอฟเฟคขยี้มุข Transition.
+                            </h5>
+                        </div>
+                    </div>
+    
+                </section>
+                <!-- ======================================= Skills Section ================================== -->
+                <section class="oliva-intro tabcontent" id="skill">
+                    <div class="intro_main">
+                        <h2 class="intro font_w_font_s fade_up">My Skills</h2>
+                    </div>
+                    <h2 class="moswa font_w_font_s fade_up">ทักษะทั้งหมดที่มีในสาขางานและได้รับการเรียนรู้มา</h2>
+                    <h3 class="passionate font_w_font_s1 ">ทักษะเหล่านี้ได้มาจากการศึกษาเชิงวิชาการ การฝึกปฏิบัติงานและโอกาสในการทำงานจริง
+                    </h3>
+                    <h3 class="lan_skill hard_skill font_w_font_s fade_up">Skills</h3>
+                    <div class="skill_circle_main">
+                        <div class="skill_circle fade_up">
+                            <div class="hard_skill_group">
+                                <img class="figma" src="../assets/images/aftereffects.png" alt="aftereffects">
+                            </div>
+                            <h4 class="subject font_w_font_s1">After Effects</h4>
+                        </div>
+                        <div class="skill_circle fade_up">
+                            <div class="hard_skill_group">
+                                <img class="figma" src="../assets/images/photoshop.png" alt="Photoshop">
+                            
+                            </div>
+                            <h4 class="subject font_w_font_s1">Photoshop</h4>
+                        </div>
+                        <div class="skill_circle fade_up">
+                            <div class="hard_skill_group">
+                                <img class="figma" src="../assets/images/illustrator.png" alt="illustrator">
+                                
+                            </div>
+                            <h4 class="subject font_w_font_s1">Illustrator</h4>
+                        </div>
+                        <div class="skill_circle fade_up">
+                            <div class="hard_skill_group">
+                                <img class="figma" src="../assets/images/premierepro.png" alt="premierepro">
+                                
+                            </div>
+                            <h4 class="subject font_w_font_s1">Premiere Pro</h4>
+                        </div>
+                        <div class="skill_circle fade_up">
+                            <div class="hard_skill_group">
+                                <img class="figma" src="../assets/images/autodesk maya.png" alt="autodesk maya">
+                                
+                            </div>
+                            <h4 class="subject font_w_font_s1">Autodesk Maya</h4>
+                    </div>
+                </section>
+                <!-- ======================================= Portfolio Section  ================================== -->
+                <section class="oliva-intro tabcontent" id="portfolio">
+                    <div class="intro_main">
+                        <h2 class="intro font_w_font_s fade_up">portfolio</h2>
+                    </div>
+                    <h3 class="passionate font_w_font_s1 fade_up"></h3>
+                    <div class="content_main">
+                        <div class="content_main1">
+                            <div class="fade_up">
+                                <div class="content_portfolio pop-up">
+                                    <div class="content-overlay"></div>
+                                    <img class="content-image" src="../assets/images/12Kingdoms.jpg" alt="12Kingdoms">
+                                    <div class="content-details fadeIn-bottom">
+                                        <h3 class="content-title">Ramutt Channel 12Kingdoms</h3>
+                                        <p class="content-text">Motion graphic & Camera man & Editor</p>
+                                    </div>
+                                </div>
+                                <h4 class="project_name font_w_font_s">Ramutt Channel 12Kingdoms</h4>
+                                <p class="project_name_sub font_w_font_s1">Motion graphic & Camera man & Editor</p>
+                            </div>
+              <!-- ======================================= Shoreel Motion Prawit  ================================== -->             
+                            <div class="">
+                                <div class="content_portfolio" id="youtube">
+                                    <video controls autoplay muted loop width="350">
+                                        <source src="../assets/video/335_prawit2.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <h4 class="project_name font_w_font_s">Shoreel Motion Prawit</h4>
+                                <p class="project_name_sub font_w_font_s1">Motion graphic</p>
+                            </div>
+            <!-- ======================================= Shoreel Motion Prawit End  ================================== -->                
+                            <div class="">
+                                <a href="#popup2">
+                                    <div class="content_portfolio">
+                                        <div class="content-overlay"></div>
+                                        <img class="content-image" src="../assets/images/infothumnail.jpg"
+                                            alt="infothumnail">
+                                        <div class="content-details fadeIn-bottom">
+                                            <h3 class="content-title">My infographice design</h3>
+                                            <p class="content-text">Graphics design gallery</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <h4 class="project_name font_w_font_s">My infographice design</h4>
+                                <p class="project_name_sub font_w_font_s1">Graphics design gallery</p>
+                            </div>
+                            <div class="">
+                                <a href="#popup2">
+                                    <div class="content_portfolio">
+                                        
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/6Q-X0EIm1X0?si=o_P9G2Y93ES4dQHC" 
+                                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    </div>
+                                </a>
+                                <h4 class="project_name font_w_font_s">โย่ว และนี่คือเสียงจากปู่ครับ</h4>
+                                <p class="project_name_sub font_w_font_s1">Award</p>
+                            </div>
+                        </div>
+                <!-- ======================================= content_main2  ================================== -->
+                        <div class="content_main2">
+                            <div class="fade_up">
+                                <a href="#popup3">
+                                    <div class="content_portfolio">
+                                    <div class="content-overlay"></div>
+                                    <img class="content-image" src="../assets/images/Bunjong.jpg" alt="Bunjong">
+                                    <div class="content-details fadeIn-bottom">
+                                        <h3 class="content-title">Bunjong production</h3>
+                                        <p class="content-text">Motion graphic</p>
+                                    </div>
+                                </div>
+                                <h4 class="project_name font_w_font_s">Bunjong production</h4>
+                                <p class="project_name_sub font_w_font_s1">Motion graphic</p>
+                            </div>
+                            
+                            <div class="">
+                                <a href="#popup1">
+                                    <div class="content_portfolio">
+                                        <div class="content-overlay"></div>
+                                        <img class="content-image" src="../assets/images/city_3Dview.jpg"
+                                            alt="city_3Dview">
+                                        <div class="content-details fadeIn-bottom">
+                                            <h3 class="content-title">My Graphics design</h3>
+                                            <p class="content-text">Graphics design gallery</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <h4 class="project_name font_w_font_s">My Graphics design</h4>
+                                <p class="project_name_sub font_w_font_s1">Graphics design gallery</p>
+                            </div>
+                            
+                            <div class="">
+                                <a href="#popup4">
+                                    <div class="content_portfolio">
+                                        <div class="content-overlay"></div>
+                                    <img class="content-image" src="../assets/images/LOGO-BW.png" alt="LOGO-BW">
+                                    <div class="content-details fadeIn-bottom">
+                                        <h3 class="content-title">Personal work</h3>
+                                        <p class="content-text">Motion graphic</p>
+                                    </div>
+                                </div>
+                                <h4 class="project_name font_w_font_s">Personal work</h4>
+                                <p class="project_name_sub font_w_font_s1">Motion graphic</p>
+                            </div>
+                            <div class="">
+                                    <div class="content_portfolio">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/D4L1p-aHVJI?si=z0BjRYu50yfhVhEU" 
+                                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        
+                                        
+                                    </div>
+                                </a>
+                                <h4 class="project_name font_w_font_s">ไม่ต้องเจ็บต้องป่วย เขาก็ช่วยดูแล</h4>
+                                <p class="project_name_sub font_w_font_s1">Award</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ======================================= Portfolio Section End  ================================== -->
+
+                <!-- ======================================= Contact us Section  ================================== -->
+                <section class="oliva-intro tabcontent" id="contact">
+                    <div class="intro_main">
+                        <h2 class="intro fade_up">contact us</h2>
+                    </div>
+                    <div>
+                        <h3 class="moswa touch">ติดต่อ!</h3>
+                        <div class="contact_number_main">
+                            <img src="../assets/images/contact.svg" alt="contact">
+                            <h4 class="contact_number"><a href="tel:0984587274">098-458-7274</a></h4>
+                        </div>
+                        <div class="contact_number_main">
+                            <img src="../assets/images/gmail.svg" alt="gmail">
+                            <h4 class="contact_number"><a href="mailto:Prawittechakam@gmail.com">Prawittechakam@gmail.com</a></h4>
+                        </div>
+                        <div class="contact_number_main">
+                            <img src="../assets/images/map.svg" alt="map">
+                            <h4 class="contact_number">
+                                <a href="javascript:void;">41 ซ.ลาซาล 75 ถ.สุขุมวิท 105 แขวงบางนาใต้ เขตบางนา กรุงเทพมหานคร 10260</a>
+                            </h4>
+                        </div>
+                    </div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3876.938110669275!2d100.63388317652287!3d13.661527186720884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTPCsDM5JzQxLjUiTiAxMDDCsDM4JzExLjMiRQ!5e0!3m2!1sth!2sth!4v1734324499291!5m2!1sth!2sth"
+                        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    <h5 class="copyright">© Prawittechakam 2024. 
+                    </h5>
+                </section>
+                <!-- ======================================= Contact us Section End ================================== -->
+            </div>
+        </section>
+        <!-- ======================================= Social Media Right Side  ================================== -->
+        <div class="social_media_main" id="social_media_main">
+            <ul class="social_media">
+                <li><a href="https://www.behance.net/2545par" target="blank">BE</a></li>
+                <li><a href="https://dribbble.com/BOSSworkhard" target="blank">DR</a></li>
+            </ul>
+        </div>
+        <!-- ======================================= Social Media Right Side End ================================== -->
+        <!-- ======================================= Portfolio PopUp Window  ================================== -->
+        <div class="overlay">
+            <div class="content2">
+                <div id="close">
+                    <i class="ri-close-fill"></i>
+                </div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Ao6vAFfzblg?si=5Xc7e4y8axqHUbFc" 
+                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                            gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+                <div class="corporate_main">
+                    <div class="corporate_sub">
+                        <h3 class="project_name corp font_w_font_s">Ramutt Channel 12Kingdoms</h3>
+                        <p class="project_name_sub font_w_font_s1">Motion graphic & Camera man & Editor</p>
+                    </div>
+                    <div class="cuberto_main">
+                        <p class="created_by">Created By:</p>
+                        <p class="cuberto">Prawit techakam</p>
+                    </div>
+                    <div class="cuberto_main">
+                        <p class="created_by">Date:</p>
+                        <p class="cuberto">13/04/2024 - 11/11/2024</p>
+                    </div>
+                    <div class="cuberto_main">
+                        <p class="created_by">Categories:</p>
+                        <p class="cuberto">ประสบการณ์ทํางาน</p>
+                    </div>
+                </div>
+                <p class="blandit_text font_w_font_s1">
+                    12Kingdoms คือรายการ 12 คณะ มาแข่งขันเกมในรูปแบบเกมโชว์ เปรียบทั้ง 12 คณะเป็นดั่งอาณาจักรที่แต่ละคณะมีความ
+                    โดดเด่น และมีความเป็นเอกลักษณ์ของตนเอง เพื่อมาชิงรางวัล จาก สปอนเซอร์ lactasoy major cineplex 
+                </p>
+                <h2 class="project_name corp font_w_font_s"> หน้าที่หลักในรายการ </h2>
+                <p class="cuberto"> หน้าที่ในส่วนตากล้อง </p>
+                <p class="blandit_text font_w_font_s1">
+                    ก่อนเริ่มงาน ก็วางแผน Camera angle พูดคุย ร่วมกับผู้กำกับ ทำงานร่วมกับผู้กำกับ ประเมินสภาพแสง และ เงา อย่างใกล้ชิด 
+                    เตรียมความพร้อมด้านอุปกรณ์ เช่น กล้อง Sony A7s ii, เลนส์กล้อง, ไฟ Led, ไมค์ Wireless, Mixer ครับ การถ่ายทำตามแผนโดยจะเป็นตากล้อง 2 เพราะรายการมีกล้อง 3 ตัว
+                </p>
+                <div class="project_second">
+                    <div>
+                        <img class="project_sub_images" src="../assets/images/P1036697.jpg"
+                            alt="project_sub_images1">
+                    </div>
+                    <div>
+                        <img class="project_sub_images" src="../assets/images/IMG_5210.jpg"
+                            alt="IMG_5210">
+                    </div>
+                    <div>
+                        <img class="project_sub_images" src="../assets/images/22822_0.jpg"
+                            alt="project_sub_images2">
+                    </div>
+                    <div>
+                        <img class="project_sub_images" src="../assets/images/FRA06457.jpg"
+                            alt="FRA06457">
+                    </div>
+                </div>
+                <p class="cuberto"> หน้าที่โมชั่นกราฟิก </p>
+                <p class="blandit_text font_w_font_s1">
+                    ในส่วนนี่จะเริ่มจากการทำโมชั่น ตามแผนงานกับโปรดิวเซอร์  เช่น โลโก้ ทรานซิชั่น ตารางทัวร์นาเมนต์ และ อื่นๆ ที่ ต้องเพิ่มเติม เพื่อให้คลิปรายการสมบูรณ์ ยิ่งขึ้น
+                </p>
+                <div class="cuberto_main">
+                <p class="cuberto"> Logo & transition  </p>
+                </div>
+                <div class="project_Three">
+                    
+                    
+                    
+                        <video controls autoplay muted loop width="350">
+                            <source src="../assets/video/Logo animate_Final 3.mp4" type="video/mp4">
+                        </video>
+                
+                        <video controls autoplay muted loop width="350">
+                            <source src="../assets/video/Transition_ S 1.mp4" type="video/mp4">
+                        </video>
+                
+                        <video controls autoplay muted loop width="350">
+                            <source src="../assets/video/STIT1.mp4" type="video/mp4">
+                        </video>
+
+                        <video controls autoplay muted loop width="350">
+                            <source src="../assets/video/OT.mp4" type="video/mp4">
+                        </video>
+                    
+                </div>
+                <div class="cuberto_main">
+                    <p class="cuberto"> Tournament  </p>
+                    </div>
+                    <div class="project_Three">
+                        
+                        
+                        
+                            <video controls autoplay muted loop width="350">
+                                <source src="../assets/video/Ep14.mp4" type="video/mp4">
+                            </video>
+                    
+                            <video controls autoplay muted loop width="350">
+                                <source src="../assets/video/End ep 14.mp4" type="video/mp4">
+                            </video>
+                    
+                            
+                        
+                    </div>
+
+                    <div class="cuberto_main">
+                        <p class="cuberto"> Lower third  </p>
+                        </div>
+                        <div class="project_Three">
+                            
+                            
+                            <video controls autoplay muted loop width="350">
+                                <source src="../assets/video/Desktop 2567-11-25 10-55-32.mp4" type="video/mp4">
+                            </video>
+                    
+                            <video controls autoplay muted loop width="350">
+                                <source src="../assets/video/Desktop 2567-11-25 11-00-46.mp4" type="video/mp4">
+                            </video>
+                    
+                            <video controls autoplay muted loop width="350">
+                                <source src="../assets/video/Desktop 2567-11-25 11-03-05.mp4" type="video/mp4">
+                            </video>
+    
+                            <video controls autoplay muted loop width="350">
+                                <source src="../assets/video/Desktop 2567-11-25 11-18-54.mp4" type="video/mp4">
+                            </video>
+                            
+                            <video controls autoplay muted loop width="350">
+                                <source src="../assets/video/Desktop 2567-11-25 11-20-39.mp4" type="video/mp4">
+                            </video>
+                            
+                        </div>
+                        <p class="cuberto"> หน้าที่ตัดต่อวีดีโอ </p>
+                        <p class="blandit_text font_w_font_s1">
+                            การตัดต่อจะเริ่่มด้วยการ นำไฟล์เสียงและวีดีโอ มาซิงค์กัน และจัดการเรื่องคุณภาพเสียง ตัดคลิปใส่เอฟเฟค ภาพ เสียงexport ไฟล์ และให้โปรดิวเซอร์ตรวจก่อนส่งให้ทีม subtitle ต่อ
+                        </p>
+                        <div class="project_second">
+                            <div>
+                                <img class="project_sub_images" src="../assets/images/image3.png"
+                                    alt="project_sub_images1">
+                            </div>
+                            <div>
+                                <img class="project_sub_images" src="../assets/images/image.png"
+                                    alt="IMG_5210">
+                            </div>
+                            <div>
+                                <img class="project_sub_images" src="../assets/images/image2.png"
+                                    alt="project_sub_images2">
+                            </div>
+                            <div>
+                                <img class="project_sub_images" src="../assets/images/image4.png"
+                                    alt="FRA06457">
+                            </div>
+                        </div>
+                <div class="pop-up-footer"> 
+                    <button class="download_cv view_project font_w_font_s"
+                        onClick="window.open('https://www.openlink.co/ramuttchannel');">
+                        <i class="ri-eye-line"></i> View Project
+                    </button>
+                    <div class="share-button share">
+                        <i class="ri-share-line share-btn"></i>
+                        <div class="social top center networks-5 ">
+                            <a class="fbtn facebook" href="https://www.facebook.com" target="_blank">
+                                <i class="ri-facebook-fill"></i>
+                            </a>
+                            <a class="fbtn instagram" href="https://www.instagram.com" target="_blank">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                            <a class="fbtn whatsapp" href="https://wa.me/+12345678899" target="_blank">
+                                <i class="ri-whatsapp-line"></i>
+                            </a>
+                            <a class="fbtn linkedin" href="https://www.linkedin.com" target="_blank">
+                                <i class="ri-linkedin-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ======================================= Portfolio PopUp Window End ================================== -->
+       
+    <!-- ======================================= Portfolio gallery ================================== -->
+    <div id="popup1" class="overlay_gallery">
+        <div class="popup_gallery">
+            <h2 class="city_gallery">My Graphics design</h2>
+            <a class="close" href="#">&times;</a>
+            <div id="cbwrap">
+                <div class="gallery">
+                    <img src="../assets/images/gallery_img1.jpg" alt="gallery_img1">
+                    <img src="../assets/images/gallery_img2.jpg" alt="gallery_img2">
+                    <img src="../assets/images/gallery_img3.jpg" alt="gallery_img3">
+                    <img src="../assets/images/gallery_img4.jpg" alt="gallery_img4">
+                    <img src="../assets/images/gallery_img5.jpg" alt="gallery_img5">
+                    <img src="../assets/images/gallery_img6.jpg" alt="gallery_img6">
+                    <img src="../assets/images/gallery_img7.jpg" alt="gallery_img7">
+                    <img src="../assets/images/gallery_img8.jpg" alt="gallery_img8">
+                    <img src="../assets/images/gallery_img9.jpg" alt="gallery_img9">
+                    <img src="../assets/images/gallery_img10.jpg" alt="gallery_img10">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup2" class="overlay_gallery">
+        <div class="popup_gallery">
+            <h2 class="city_gallery">My infographice design</h2>
+            <a class="close" href="#">&times;</a>
+            <div id="cbwrap">
+                <div class="gallery">
+                    <img src="../assets/images/info1.png" alt="info1">
+                    <img src="../assets/images/info2.jpg" alt="info2">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup3" class="overlay_gallery">
+        <div class="popup_gallery">
+            <h2 class="city_gallery">Bunjong motion graphic</h2>
+            <a class="close" href="#">&times;</a>
+            <div id="cbwrap">
+                <p class="cuberto"> LOGO </p>
+                <div class="gallery">
+                    <video controls autoplay muted loop width="350">
+                        <source src="../assets/video/logo1.mp4" type="video/mp4">
+                    </video>
+                    <video controls autoplay muted loop width="350">
+                        <source src="../assets/video/logo2.mp4" type="video/mp4">
+                    </video>
+                    <video controls autoplay muted loop width="350">
+                        <source src="../assets/video/logo3.mp4" type="video/mp4">
+                    </video>
+                    <video controls autoplay muted loop width="350">
+                        <source src="../assets/video/logo4.mp4" type="video/mp4">
+                    </video>    
+                </div>
+            </div>
+            <div id="cbwrap">
+                <p class="cuberto"> Additional </p>
+                <div class="gallery">
+                    <video controls autoplay muted loop width="350">
+                        <source src="../assets/video/BAnner.mp4" type="video/mp4">
+                    </video>
+                    <video controls autoplay muted loop width="350">
+                        <source src="../assets/video/Role.mp4" type="video/mp4">
+                    </video>
+                    <video controls autoplay muted loop width="350">
+                        <source src="../assets/video/logo5.mp4" type="video/mp4">
+                    </video>
+                    <video controls autoplay muted loop width="350">
+                        <source src="../assets/video/logo6.mp4" type="video/mp4">
+                    </video>
+                    <video controls autoplay muted loop width="350">
+                        <source src="../assets/video/logo7.mp4" type="video/mp4">
+                    </video>
+                    
+                </div>
+            </div>
+            <div class="pop-up-footer"> 
+                <button class="download_cv view_project font_w_font_s"
+                    onClick="window.open('https://www.youtube.com/@Bunjong22/videos');">
+                    <i class="ri-eye-line"></i> View Project
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="popup4" class="overlay_gallery">
+        <div class="popup_gallery">
+            <h2 class="city_gallery">Personal work</h2>
+            <a class="close" href="#">&times;</a>
+            <div id="cbwrap">
+                <p class="cuberto"> Advertising </p>
+                <div class="gallery">
+                    <video controls autoplay muted loop width="350">
+                        <source src="../assets/video/ไก่ทอด.mp4" type="video/mp4">
+                    </video>
+                    <video controls autoplay muted loop width="350">
+                        <source src="../assets/video/ไก่ทอด2.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div id="cbwrap">
+                <p class="cuberto"> Text Super </p>
+                <div class="gallery">
+                    <video controls autoplay muted loop width="350">
+                        <source src="../assets/video/Flicker Text.mp4" type="video/mp4">
+                    </video>
+                    <video controls autoplay muted loop width="350">
+                        <source src="../assets/video/PRWIT Comp 1.mp4" type="video/mp4">
+                    </video>
+                    <video controls autoplay muted loop width="350">
+                        <source src="../assets/video/Scale Text 2.mp4" type="video/mp4">
+                    </video>
+                    <video controls autoplay muted loop width="350">
+                        <source src="../assets/video/Scale Text.mp4" type="video/mp4">
+                    </video>
+                    <video controls autoplay muted loop width="350">
+                        <source src="../assets/video/Text Bounce .mp4" type="video/mp4">
+                    </video>
+                    <video controls autoplay muted loop width="350">
+                        <source src="../assets/video/Text Flip.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <script src="../assets/javascript/jquery.min.js"></script>
+    <script src="../assets/javascript/magnific-popup.min.js"></script>
+    <script src="../assets/javascript/progresscircle.js"></script>
+    <script src="../assets/javascript/cursor.js"></script>
+    <script src="../assets/javascript/bootstrap.bundle.min.js"></script>
+    <script src="../assets/javascript/slick.min.js"></script>
+    <script src="../assets/javascript/ring_animation/ring_bg_animation.js"></script>
+    <script src="../assets/javascript/script.js"></script>
+</body>
+
+</html>
