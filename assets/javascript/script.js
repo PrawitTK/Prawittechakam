@@ -122,7 +122,15 @@ $("#close").on("click", function () {
     $(".overlay").removeClass("is-on");
 });
 // Portfolio Pop-up end
+// Portfolio Pop-up2
+$(".pop-up2").on("click", function () {
+    $(".overlay2").addClass("is-on");
+});
 
+$("#close2").on("click", function () {
+    $(".overlay2").removeClass("is-on");
+});
+// Portfolio Pop-up2 end
 // Share Btn
 $(document).ready(function () {
     $(".share-btn").click(function (e) {
